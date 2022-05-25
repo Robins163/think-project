@@ -1,0 +1,24 @@
+import React from "react";
+
+
+const TextField = ({label, inputProps, onchange, value}) => {
+    return (
+        <>
+            <div className='flex flex-col'>
+                <label className='mb-2 text-base text-gray-800'>{label}</label>
+                <input
+                className='bg-gradient-500 py-2 px-3 border-3 outline-none'
+                {...inputProps}
+                    onChange={onchange}
+                value={value}
+                />
+            </div>
+
+
+
+            </>
+    )
+}
+
+
+export default TextField;
